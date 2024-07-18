@@ -266,12 +266,7 @@
             swiperSlide.className = 'swiper-slide';
 
             const img = document.createElement('img');
-            if (image_path == 'connect-four' || image_path == 'labeeb') {
-              img.src = `assets/img/${image_path}/${i}.PNG`; 
-            }
-            else{
-              img.src = `assets/img/${image_path}/${i}.png`;
-            }
+            img.src = `assets/img/${image_path}/${i}.png`;
 
             swiperSlide.appendChild(img);
             swiperWrapper.appendChild(swiperSlide);
