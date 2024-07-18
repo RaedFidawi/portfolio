@@ -266,16 +266,18 @@
             swiperSlide.className = 'swiper-slide';
 
             const img = document.createElement('img');
-            img.src = `assets/img/${image_path}/${i}.png`; // Adjust file extension and path as necessary
-            console.log(img.src)
+            if (image_path == 'connect-four' || image_path == 'labeeb') {
+              img.src = `assets/img/${image_path}/${i}.PNG`; 
+            }
+            else{
+              img.src = `assets/img/${image_path}/${i}.png`;
+            }
 
             swiperSlide.appendChild(img);
             swiperWrapper.appendChild(swiperSlide);
         }
     } else {
         console.error('Parameter "images" not found in the URL.');
-        // Optionally, handle the case where 'images' parameter is not found
-        // For example, display default images or an error message
     }
     
     const project_pool = [
