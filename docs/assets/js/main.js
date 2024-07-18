@@ -266,7 +266,7 @@
             swiperSlide.className = 'swiper-slide';
 
             const img = document.createElement('img');
-            img.src = `assets/img/${image_path}/${i}.PNG`; // Adjust file extension and path as necessary
+            img.src = `assets/img/${image_path}/${i}.png`; // Adjust file extension and path as necessary
             console.log(img.src)
 
             swiperSlide.appendChild(img);
