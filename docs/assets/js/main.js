@@ -268,7 +268,6 @@
             const img = document.createElement('img');
             img.src = `assets/img/${image_path}/${i}.PNG`; // Adjust file extension and path as necessary
             console.log(img.src)
-            img.alt = `Image ${i}`;
 
             swiperSlide.appendChild(img);
             swiperWrapper.appendChild(swiperSlide);
